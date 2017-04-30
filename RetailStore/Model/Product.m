@@ -7,10 +7,11 @@
 //
 
 #import "Product.h"
+#import "ProductManagedObject.h"
 
 static NSString *keyName     = @"name";
 static NSString *keyCategory = @"category";
-static NSString *ketPrice    = @"price";
+static NSString *keyPrice    = @"price";
 static NSString *keyimage    = @"image";
 
 @implementation Product
@@ -21,8 +22,21 @@ static NSString *keyimage    = @"image";
     if (self) {
         _name     = [data objectForKey:keyName];
         _category = [data objectForKey:keyCategory];
-        _price    = [data objectForKey:ketPrice];
+        _price    = [data objectForKey:keyPrice];
         _image    = [data objectForKey:keyimage];
+    }
+    return self;
+    
+}
+
+- (instancetype) initWithProductManagedObject:(ProductManagedObject *)productManagedObject {
+    
+    self = [super init];
+    if (self) {
+        _name     = productManagedObject.name;
+        _category = productManagedObject.category;
+        _price    = [NSNumber numberWithDouble:[productManagedObject.price doubleValue]];
+        _image    = productManagedObject.image;
     }
     return self;
     

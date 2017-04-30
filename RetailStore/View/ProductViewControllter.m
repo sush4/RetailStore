@@ -48,10 +48,10 @@ static CGFloat TableViewSectionFooterHeight = 0.0f;
 - (void) initView {
     
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.navigationController.title = NSLocalizedString(@"ProductViewController_title", @"ProductViewController_title");
+    self.navigationController.title = NSLocalizedString(@"productViewController_title", @"productViewController_title");
     
-    self.title = NSLocalizedString(@"ProductViewController_title", @"ProductViewController_title");
-    [[self.tabBarController.viewControllers objectAtIndex:1] setTitle:NSLocalizedString(@"CartViewController_title", @"CartViewController_title")];
+    self.title = NSLocalizedString(@"productViewController_title", @"productViewController_title");
+    [[self.tabBarController.viewControllers objectAtIndex:1] setTitle:NSLocalizedString(@"cartViewController_title", @"cartViewController_title")];
     _productTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
 }
@@ -102,7 +102,7 @@ static CGFloat TableViewSectionFooterHeight = 0.0f;
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     Product *product = [_productViewModel getProductForSection:indexPath.section index:indexPath.row];
-    ProductDetailViewController *productDetailViewController = [[ProductDetailViewController alloc] initWithProduct:product];
+    ProductDetailViewController *productDetailViewController = [[ProductDetailViewController alloc] initWithProduct:product isAddToCart:YES];
     [self.navigationController pushViewController:productDetailViewController animated:YES];
     
 }

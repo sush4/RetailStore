@@ -16,6 +16,8 @@
 		85B9FEA71EB5FE67008490DF /* ProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85B9FEA51EB5FE67008490DF /* ProductDetailViewController.xib */; };
 		85B9FEAA1EB5FE7C008490DF /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B9FEA91EB5FE7C008490DF /* CartViewController.m */; };
 		85B9FEAC1EB60EB8008490DF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85B9FEAB1EB60EB8008490DF /* Localizable.strings */; };
+		85B9FEAF1EB641E6008490DF /* ProductManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B9FEAE1EB641E6008490DF /* ProductManagedObject.m */; };
+		85B9FEB21EB65573008490DF /* CartViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B9FEB11EB65573008490DF /* CartViewModel.m */; };
 		85C088091EB530400029FB9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C088081EB530400029FB9A /* main.m */; };
 		85C088121EB530400029FB9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C088101EB530400029FB9A /* Main.storyboard */; };
 		85C088151EB530400029FB9A /* RetailStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85C088131EB530400029FB9A /* RetailStore.xcdatamodeld */; };
@@ -60,6 +62,10 @@
 		85B9FEA81EB5FE7C008490DF /* CartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
 		85B9FEA91EB5FE7C008490DF /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
 		85B9FEAB1EB60EB8008490DF /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		85B9FEAD1EB641E6008490DF /* ProductManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductManagedObject.h; sourceTree = "<group>"; };
+		85B9FEAE1EB641E6008490DF /* ProductManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductManagedObject.m; sourceTree = "<group>"; };
+		85B9FEB01EB65573008490DF /* CartViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartViewModel.h; sourceTree = "<group>"; };
+		85B9FEB11EB65573008490DF /* CartViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartViewModel.m; sourceTree = "<group>"; };
 		85C088041EB530400029FB9A /* RetailStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetailStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C088081EB530400029FB9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85C088111EB530400029FB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -178,6 +184,10 @@
 				858B41881EB5D0AE0040B962 /* DataParser.m */,
 				858B41991EB5D9390040B962 /* ProductViewModel.h */,
 				858B419A1EB5D9390040B962 /* ProductViewModel.m */,
+				85B9FEAD1EB641E6008490DF /* ProductManagedObject.h */,
+				85B9FEAE1EB641E6008490DF /* ProductManagedObject.m */,
+				85B9FEB01EB65573008490DF /* CartViewModel.h */,
+				85B9FEB11EB65573008490DF /* CartViewModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -335,6 +345,7 @@
 			files = (
 				858B41981EB5D6FB0040B962 /* ProductViewControllter.m in Sources */,
 				85B9FEA61EB5FE67008490DF /* ProductDetailViewController.m in Sources */,
+				85B9FEAF1EB641E6008490DF /* ProductManagedObject.m in Sources */,
 				858B419B1EB5D9390040B962 /* ProductViewModel.m in Sources */,
 				858B41861EB5CEB10040B962 /* Product.m in Sources */,
 				85B9FEAA1EB5FE7C008490DF /* CartViewController.m in Sources */,
@@ -342,6 +353,7 @@
 				85C0884C1EB544FF0029FB9A /* CoreDataUtil.m in Sources */,
 				85C088151EB530400029FB9A /* RetailStore.xcdatamodeld in Sources */,
 				85C088091EB530400029FB9A /* main.m in Sources */,
+				85B9FEB21EB65573008490DF /* CartViewModel.m in Sources */,
 				858B41891EB5D0AE0040B962 /* DataParser.m in Sources */,
 				85C088491EB5445E0029FB9A /* DataAPIs.m in Sources */,
 			);

@@ -6,10 +6,15 @@
   Copyright © 2017 Sushant kumar. All rights reserved.
 */
 
-"ProductViewController_title" = "Products";
-"ProductDetailController_title" = "Product Detail";
+"productViewController_title" = "Products";
+"productDetailController_title" = "Product Detail";
 
-"CartViewController_title" = "Cart";
+"cartViewController_title" = "Cart";
 
-"Product_name" = "Name : %@";
-"Product_price" = "Price : ₹ %@";
+"product_name" = "Name : %@";
+"product_price" = "Price : ₹ %@";
+
+"item_added" = "Item added to cart";
+"empty_cart" = "Empty cart";
+"total" = "Total: ₹ %@";
+"price" = "Price: ₹ %@";

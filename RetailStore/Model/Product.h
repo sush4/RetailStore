@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+@class ProductManagedObject;
 
 @interface Product : NSObject
 
 - (instancetype) initWithDistionary:(NSDictionary *) data;
+- (instancetype) initWithProductManagedObject:(ProductManagedObject *)productManagedObject;
 
 @property (nonatomic, strong, readonly) NSString *name;
 @property (nonatomic, strong, readonly) NSString *category;

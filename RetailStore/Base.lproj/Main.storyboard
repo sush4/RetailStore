@@ -59,9 +59,28 @@
                     <view key="view" contentMode="scaleToFill" id="nxH-Zu-db0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f9H-yk-cmP">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="d0I-lM-6yu" id="cBR-W2-pld"/>
+                                    <outlet property="delegate" destination="d0I-lM-6yu" id="d1h-OF-0Ml"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gZR-p6-2hG" firstAttribute="top" secondItem="f9H-yk-cmP" secondAttribute="bottom" id="7GO-Fu-McT"/>
+                            <constraint firstItem="f9H-yk-cmP" firstAttribute="top" secondItem="SW1-4b-NCE" secondAttribute="bottom" id="ZaM-kB-XhF"/>
+                            <constraint firstAttribute="trailing" secondItem="f9H-yk-cmP" secondAttribute="trailing" id="iXQ-fy-SyB"/>
+                            <constraint firstItem="f9H-yk-cmP" firstAttribute="leading" secondItem="nxH-Zu-db0" secondAttribute="leading" id="nmr-ae-acz"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rUQ-2p-VsZ"/>
+                    <connections>
+                        <outlet property="cartTableView" destination="f9H-yk-cmP" id="MmY-1u-8VO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CYp-KP-ww3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

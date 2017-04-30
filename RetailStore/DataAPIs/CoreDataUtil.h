@@ -7,9 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Product;
+@class ProductManagedObject;
 
 @interface CoreDataUtil : NSObject
 
 + (CoreDataUtil *)getCoreDataUtilInstance;
+
+- (void)saveContext;
+
+- (NSArray *) getCartList;
+
+- (ProductManagedObject *) addProductToCart:(Product *)product;
+- (void) deleteProductFromCart:(ProductManagedObject *) productManagedObject;
 
 @end

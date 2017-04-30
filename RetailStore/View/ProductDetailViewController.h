@@ -11,6 +11,6 @@
 
 @interface ProductDetailViewController : UIViewController
 
-- (instancetype) initWithProduct:(Product *)product;
+- (instancetype) initWithProduct:(Product *)product isAddToCart:(BOOL)isAddToCart;
 
 @end

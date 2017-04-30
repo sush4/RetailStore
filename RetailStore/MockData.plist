@@ -12,7 +12,7 @@
 			<key>category</key>
 			<string>Electronics</string>
 			<key>price</key>
-			<integer>100</integer>
+			<integer>10000</integer>
 		</dict>
 		<dict>
 			<key>image</key>
@@ -22,7 +22,7 @@
 			<key>category</key>
 			<string>Electronics</string>
 			<key>price</key>
-			<integer>150</integer>
+			<integer>15500</integer>
 		</dict>
 		<dict>
 			<key>image</key>
@@ -32,7 +32,7 @@
 			<key>category</key>
 			<string>Electronics</string>
 			<key>price</key>
-			<integer>200</integer>
+			<integer>15000</integer>
 		</dict>
 		<dict>
 			<key>image</key>
@@ -42,7 +42,7 @@
 			<key>category</key>
 			<string>Furniture</string>
 			<key>price</key>
-			<integer>100</integer>
+			<integer>5000</integer>
 		</dict>
 		<dict>
 			<key>image</key>
@@ -52,7 +52,7 @@
 			<key>category</key>
 			<string>Furniture</string>
 			<key>price</key>
-			<integer>100</integer>
+			<integer>3000</integer>
 		</dict>
 		<dict>
 			<key>image</key>
@@ -62,7 +62,7 @@
 			<key>category</key>
 			<string>Furniture</string>
 			<key>price</key>
-			<integer>100</integer>
+			<integer>7000</integer>
 		</dict>
 	</array>
 </dict>
