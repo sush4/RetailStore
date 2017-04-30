@@ -1,0 +1,15 @@
+/* 
+  lco.strings
+  RetailStore
+
+  Created by Sushant kumar on 30/04/17.
+  Copyright © 2017 Sushant kumar. All rights reserved.
+*/
+
+"ProductViewController_title" = "Products";
+"ProductDetailController_title" = "Product Detail";
+
+"CartViewController_title" = "Cart";
+
+"Product_name" = "Name : %@";
+"Product_price" = "Price : ₹ %@";
