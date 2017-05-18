@@ -14,6 +14,8 @@
 - (instancetype) initWithDistionary:(NSDictionary *) data;
 - (instancetype) initWithProductManagedObject:(ProductManagedObject *)productManagedObject;
 
+//  Model 
+
 @property (nonatomic, strong, readonly) NSString *name;
 @property (nonatomic, strong, readonly) NSString *category;
 @property (nonatomic, strong, readonly) NSString *image;
